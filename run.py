@@ -49,6 +49,52 @@ def rules():
     homepage()
 
 
+def start_game(word):
+    """
+    Starts the game and hides the word for the player.
+    It checks if the letter input is correct,
+    if not it prompts user for input, then checks if it's in the word.
+    Iterates through hidden word and substitutes letters where appropriate.
+    Checks if the game is finished and displays the relative message.
+    Displays stats like chances left, visual rep of chances left, which letters
+    have been used and the hidden word or correct letters.
+    """
+    game_word = '_' * len(word)
+    endgame = False
+    guessed_letters = []
+    chances = 6
+    print(display_hangman(chances))
+    print('Save the fellow from the gallows!\n')
+    print(f'Chances left: {chances}\n')
+    print('Guess this word: ' + ''.join(game_word) + '\n')
+    while not endgame and chances > 0:
+        guess = input('Try a letter:\n').upper()
+        if len(guess) == 1 and guess.isalpha():
+            if guess in guessed_letters:
+                print(f'You have already tried {guess}!')
+            elif guess not in word:
+                print('Woops {guess} is not what we are looking for!')
+                chances -= 1
+                guessed_letters.append(guess)
+            else:
+                print('Great {guess} is in the word well done!')
+                guessed_letters.append(guess)
+                word_as_list = list(game_word)
+                indices = [
+                    i for i, letter in enumerate(word)
+                    if letter == guess]
+                for index in indices:
+                    word_as_list[index] = guess
+                game_word = ''.join(word_as_list)
+                if '_' not in game_word:
+                    endgame = True
+        elif len(guess)
+
+
+
+
+
+
 
     
 
