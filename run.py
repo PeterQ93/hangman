@@ -73,11 +73,11 @@ def start_game(word):
             if guess in guessed_letters:
                 print(f'You have already tried {guess}!')
             elif guess not in word:
-                print('Woops {guess} is not what we are looking for!')
+                print(f'Woops {guess} is not what we are looking for!')
                 chances -= 1
                 guessed_letters.append(guess)
             else:
-                print('Great {guess} is in the word well done!')
+                print(f'Great {guess} is in the word well done!')
                 guessed_letters.append(guess)
                 word_as_list = list(game_word)
                 indices = [
@@ -88,7 +88,18 @@ def start_game(word):
                 game_word = ''.join(word_as_list)
                 if '_' not in game_word:
                     endgame = True
-        elif len(guess)
+        elif len(guess) != 1:
+            print('Oh no, you have to guess one letter at a time!')
+            print(f'You used {len(guess)} characters.\n')
+        else:
+            print('Sorry you can only guess letters!')
+            print(f'{guess} is not a letter!')
+        print(display_hangman(chances))
+        print(f'Chances left: {chances}\n')
+        print('Guess this word: ' + ', '.join(game_word) + '\n')
+        print('Letters tried: ' + ', '.join(guessed_letters) + '\n')
+
+        
 
 
 
