@@ -98,6 +98,18 @@ def start_game(word):
         print(f'Chances left: {chances}\n')
         print('Guess this word: ' + ', '.join(game_word) + '\n')
         print('Letters tried: ' + ', '.join(guessed_letters) + '\n')
+    if endgame:
+        display_win()
+        print('Nice one you got it right!')
+    else:
+        display_lose()
+        print('To the gallows you go better luck next time!')
+        print(f'The word was: {word}.')
+    restart_game()
+
+
+def restart_game():
+    
 
         
 
