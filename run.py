@@ -43,8 +43,6 @@ def rules():
     print('4. Once you run out of lives its gameover')
     print('5. Win the game by guessing the correct letters')
     print('6. Good Luck you will need it!')
-         
-
     start = input('Press the enter key to return to the Homepage.\n')
     homepage()
 
@@ -114,7 +112,6 @@ def restart_game():
     If not, returns to homepage.
     """
     restart_option = input('Would you like to play again?').upper()
-    
     if restart_option == 'Y':
         word = get_word()
         start_game(word)
@@ -127,6 +124,9 @@ def restart_game():
 
 
 def display_hangman(chances):
+    """
+    The gradual progression of the hangman game.
+    """
     hanging_man = [  # final state: head, torso, both arms, and both legs
                 """
                    --------
@@ -202,12 +202,63 @@ def display_hangman(chances):
 
 
 def homepage_graphic():
+    """
+    Graphic to be diplayed on Homepage
+    """
+    print("""
+        
+  _    _                                         
+ | |  | |                                        
+ | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
+ |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+ | |  | | (_| | | | | (_| | | | | | | (_| | | | |
+ |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                      __/ |                      
+                     |___/                       
+
+    """)
 
 
 def display_win():
+    """
+    Display a graphic for if the player wins the game
+    """
+    print("""You guessed the word! You Win!
+
+██     ██ ███████ ██      ██
+██     ██ ██      ██      ██
+██  █  ██ █████   ██      ██
+██ ███ ██ ██      ██      ██
+ ███ ███  ███████ ███████ ███████
+██████   ██████  ███    ██ ███████ ██
+██   ██ ██    ██ ████   ██ ██      ██
+██   ██ ██    ██ ██ ██  ██ █████   ██
+██   ██ ██    ██ ██  ██ ██ ██
+██████   ██████  ██   ████ ███████ ██
+    
+    """)
 
 
 def display_lose():
+    print("""
+        --------
+                    |      |
+                    |      O
+                    |     \|/
+                    |      |
+                    |     / \.
+                    -
+    ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███
+   ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒
+  ▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒
+  ░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄
+  ░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒
+   ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░
+   ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░
+   ░ ░   ░   ░   ▒   ░      ░      ░      ░ ░ ░ ▒       ░░     ░     ░░   ░
+    ░       ░  ░       ░      ░  ░       ░ ░        ░     ░  ░   ░
+                                                      ░
+    """)
 
         
 homepage()
