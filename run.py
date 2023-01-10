@@ -109,10 +109,36 @@ def start_game(word):
 
 
 def restart_game():
+    """
+    Asks if the player wants to restard the game.
+    If not, returns to homepage.
+    """
+    restart_option = input('Would you like to play again?').upper()
     
+    if restart_option == 'Y':
+        word = get_word()
+        start_game(word)
+    elif restart_option == 'N':
+        homepage()
+    else:
+        print('Pick Y or N!')
+        print(f'You picked {restart_option}')
+        restart_game()
+
+
+def display_hangman():
+
+
+def homepage_graphic():
+
+
+def display_win():
+
+
+def display_lose():
 
         
-
+homepage()
 
 
 
