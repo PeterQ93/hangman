@@ -1,5 +1,16 @@
-from words import word_list
 import random
+from words import word_list
+
+
+class Color:
+    """
+    Colors to be called for text within this file
+    """
+    RESET = '\033[0m'
+    BLUE = '\u001b[34m'
+    GREEN = '\033[92m'
+    RED = '\033[91m'
+    YELLOW = '\u001b[33m'
 
 
 def get_word():
@@ -10,7 +21,7 @@ def get_word():
     return random_word.upper()
 
 
-def homepage():
+def homepage(): 
     """
     Homepage the user is first brought to.
     Gives them the option to start the game or to read the rules.
@@ -18,8 +29,8 @@ def homepage():
     word = get_word()
     homepage_graphic()
     print(display_hangman(0))
-    print('Type 1 to begin game\n')
-    print('Type 2 to read the instructions')
+    print(f'{Color.GREEN}Type 1 to begin game{Color.RESET}\n')
+    print(f'{Color.YELLOW}Type 2 to read the instructions{Color.RESET}')
     selection = False
     while not selection:
         choice = input(' \n')
@@ -31,7 +42,7 @@ def homepage():
             rules()
         else:
             print('\n Please type 1 or 2 to make your choice.')
-
+   
 
 def rules():
     """
@@ -43,7 +54,7 @@ def rules():
     print('4. Once you run out of lives its gameover')
     print('5. Win the game by guessing the correct letters')
     print('6. Good Luck you will need it!')
-    start = input('Press the enter key to return to the Homepage.\n')
+    input('Press the enter key to return to the Homepage.\n')
     homepage()
 
 
@@ -128,7 +139,7 @@ def display_hangman(chances):
     The gradual progression of the hangman game.
     """
     hanging_man = [  # final state: head, torso, both arms, and both legs
-                """
+                f"""{Color.BLUE}
                    --------
                    |      |
                    |      O
@@ -136,9 +147,9 @@ def display_hangman(chances):
                    |      |
                    |     / \\
                    -
-                """,
+                {Color.RESET}""",
                 # head, torso, both arms, and one leg
-                """
+                f"""{Color.BLUE}
                    --------
                    |      |
                    |      O
@@ -146,9 +157,9 @@ def display_hangman(chances):
                    |      |
                    |     / 
                    -
-                """,
+                {Color.RESET}""",
                 # head, torso, and both arms
-                """
+                f"""{Color.BLUE}
                    --------
                    |      |
                    |      O
@@ -156,9 +167,9 @@ def display_hangman(chances):
                    |      |
                    |      
                    -
-                """,
+                {Color.RESET}""",
                 # head, torso, and one arm
-                """
+                f"""{Color.BLUE}
                    --------
                    |      |
                    |      O
@@ -166,9 +177,9 @@ def display_hangman(chances):
                    |      |
                    |     
                    -
-                """,
+                {Color.RESET}""",
                 # head and torso
-                """
+                f"""{Color.BLUE}
                    --------
                    |      |
                    |      O
@@ -176,9 +187,9 @@ def display_hangman(chances):
                    |      |
                    |     
                    -
-                """,
+                {Color.RESET}""",
                 # head
-                """
+                f"""{Color.BLUE}
                    --------
                    |      |
                    |      O
@@ -186,9 +197,9 @@ def display_hangman(chances):
                    |      
                    |     
                    -
-                """,
+                {Color.RESET}""",
                 # initial empty state
-                """
+                f"""{Color.BLUE}
                    --------
                    |      |
                    |      
@@ -196,7 +207,7 @@ def display_hangman(chances):
                    |      
                    |     
                    -
-                """
+                {Color.RESET}"""
     ]
     return hanging_man[chances]
 
@@ -205,8 +216,7 @@ def homepage_graphic():
     """
     Graphic to be diplayed on Homepage
     """
-    print("""
-        
+    print(f"""{Color.BLUE}  
   _    _                                         
  | |  | |                                        
  | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
@@ -214,16 +224,14 @@ def homepage_graphic():
  | |  | | (_| | | | | (_| | | | | | | (_| | | | |
  |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
                       __/ |                      
-                     |___/                       
-
-    """)
+                     |___/  {Color.RESET}""")
 
 
 def display_win():
     """
     Display a graphic for if the player wins the game
     """
-    print("""You guessed the word! You Win!
+    print(f"""You guessed the word! You Win! {Color.GREEN}
 
 ██     ██ ███████ ██      ██
 ██     ██ ██      ██      ██
@@ -236,12 +244,15 @@ def display_win():
 ██   ██ ██    ██ ██  ██ ██ ██
 ██████   ██████  ██   ████ ███████ ██
     
-    """)
+    {Color.RESET}""")
 
 
 def display_lose():
-    print("""
-        --------
+    """
+    Display a graphic for if the player loses the game.
+    """
+    print(f"""{Color.RED}
+                    --------
                     |      |
                     |      O
                     |     \|/
@@ -258,15 +269,7 @@ def display_lose():
    ░ ░   ░   ░   ▒   ░      ░      ░      ░ ░ ░ ▒       ░░     ░     ░░   ░
     ░       ░  ░       ░      ░  ░       ░ ░        ░     ░  ░   ░
                                                       ░
-    """)
+    {Color.RESET}""")  
 
-        
+
 homepage()
-
-
-
-
-
-
-    
-
