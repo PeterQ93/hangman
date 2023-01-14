@@ -30,7 +30,7 @@ def homepage():
     homepage_graphic()
     print(display_hangman(0))
     print(f'{Color.GREEN}Type 1 to begin game{Color.RESET}\n')
-    print(f'{Color.YELLOW}Type 2 to read the instructions{Color.RESET}')
+    print(f'{Color.YELLOW}Type 2 to read the rules{Color.RESET}')
     selection = False
     while not selection:
         choice = input(' \n')
@@ -42,7 +42,7 @@ def homepage():
             rules()
         else:
             print('\n Please type 1 or 2 to make your choice.')
-   
+ 
 
 def rules():
     """
@@ -72,6 +72,24 @@ def start_game(word):
     endgame = False
     guessed_letters = []
     chances = 6
+    difficulty_selected = False
+    while difficulty_selected is False:
+        difficulty = input("""Please select difficulty:
+E = Easy, M = Medium, H = Hard: """).upper()
+        if difficulty == 'E':
+            chances = 6
+            print('You chose Easy difficulty. You have ', chances, 'chances')
+            difficulty_selected = True
+        elif difficulty == 'M':
+            chances = 4
+            print('You chose Medium difficulty. You have ', chances, 'chances')
+            difficulty_selected = True
+        elif difficulty == 'H':
+            chances = 3
+            print('You chose Hard difficulty. You have ', chances, 'chances')
+            difficulty_selected = True
+        else:
+            print(difficulty, 'is not a difficulty')
     print(display_hangman(chances))
     print('Save the fellow from the gallows!\n')
     print(f'Chances left: {chances}\n')
