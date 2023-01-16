@@ -3,7 +3,7 @@
 
 ## **Introduction**
 <hr>
-
+Hangman is a classic game played all over the world. The aim is to guess the word in 3-6 tries. If the user guesses the word before they run out of wrong tries, they win the game. If the user does not guess the word then its game over. The user can choose which diffiulty they want to play with a range from 3 to 6 guesses.The user is then asked if they would like to play again. With every failed guess more and more features of a stick figure would appear on the gallows until it is complete.
 
 
 ![Website Screenshot](assets/images/homepage-responsive.png)
@@ -27,14 +27,31 @@
 ## **Planning stage**
 ### **Target Audiences**
 
+- All ages 
+- All levels
+- English speakers
+- English students
+- Users who want to kill a little time by completing a word game instead of being on social media.
 
 ### **User Stories** 
 
+- As a user, I would like to know how to play the game
+- As a user, I would like to know the answer at the end of the game if i get it incorrect.
+- As a user, I would like to know how many letters there are in the word i have to guess.
+- As a user, I would like to play the game as many times as i want.
+- As a user, I want to be able to select a difficulty which changes the amount of tries i start with.
+- As a user, I want to be able to see how many tries i have left.
+- As a user, when i already submit a letter i have already put in, I do not want to lose a try.
+- As a user, I want to be able to replay the game once I've finished.
+- As a user, I want to be able to see a visual representation of the hangman.
 
- 
 ### **Site Aims**
 
-
+- Provide a game that runs smoothly.
+- Provide quick yet challenging entertainment.
+- Provide an easy to use interface.
+- Provide the use with no errors.
+- Provide people with an alternative to social media.
 
 ## **Features**
 
