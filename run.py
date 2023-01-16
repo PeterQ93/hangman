@@ -60,6 +60,7 @@ def rules():
 
 def start_game(word):
     """
+    Lets the player choose difficulty.
     Starts the game and hides the word for the player.
     It checks if the letter input is correct,
     if not it prompts user for input, then checks if it's in the word.

@@ -1,31 +1,87 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Hangman Game**
+<hr>
 
-Welcome PeterQ93,
+## **Introduction**
+<hr>
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
-## Reminders
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+![Website Screenshot](assets/images/homepage-responsive.png)
+​
+## Table of contents:
+1. [**Planning stage**](#planning-stage)
+    * [***Target Audiences***](#target-audiences)
+    * [***User Stories***](#user-stories)
+    * [***Site Aims***](#site-aims)
+    * [***Page Layout***](#page-layout)
+1. [**Features**](#features)
+    * [**Main Menu**](#main-menu)
+    * [**Instructions**](#instructions)
+    * [**Game Started**](#game-started)
+    * [**Wrong Inputs**](#wrong-inputs)
+1. [**Testing Phase**](#testing-phase)
+1. [**Bugs**](#bugs)
+1. [**Deployment**](#deployment)
+1. [**Credits**](#credits)
+   
+## **Planning stage**
+### **Target Audiences**
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### **User Stories** 
 
-1. `heroku/python`
-2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+ 
+### **Site Aims**
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
-Connect your GitHub repository and deploy as normal.
 
-## Constraints
+## **Features**
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
------
-Happy coding!
+### **Main Menu**
+
+
+### **Instructions**
+
+### **Game Started**
+
+### **Wrong Input**
+
+## **Testing Phase**
+
+
+
+## **Bugs**
+
+
+
+
+
+​
+***
+## **Deployment**
+
+I deployed the page on GitHub pages via the following procedure: -
+​
+1. From the project's [repository](pageurl), go to the **Settings** tab.
+2. From the left-hand menu, select the **Pages** tab.
+3. Under the **Source** section, select the **Main** branch from the drop-down menu and click **Save**.
+4. A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
+​
+You can find the live site via the following URL - [Computer Knowledge](https://peterq93.github.io/quiz/)
+***
+​
+
+​
+## **Credits**
+
+
+
+
+
+
+
+
+​
+​
