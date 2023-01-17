@@ -1,3 +1,8 @@
+"""
+Page to hold the random words needed for game.
+"""
+
+
 word_list = [
     'wares',
     'soup',
