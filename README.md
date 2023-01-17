@@ -6,7 +6,7 @@
 Hangman is a classic game played all over the world. The aim is to guess the word in 3-6 tries. If the user guesses the word before they run out of wrong tries, they win the game. If the user does not guess the word then its game over. The user can choose which diffiulty they want to play with a range from 3 to 6 guesses.The user is then asked if they would like to play again. With every failed guess more and more features of a stick figure would appear on the gallows until it is complete.
 
 
-![Website Screenshot](assets/images/homepage-responsive.png)
+![Hangman Game](assets/images/welcome.png)
 ​
 ## Table of contents:
 1. [**Planning stage**](#planning-stage)

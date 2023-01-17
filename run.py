@@ -15,7 +15,7 @@ def get_word():
     return random_word.upper()
 
 
-def homepage(): 
+def welcome(): 
     """
     Homepage the user is first brought to.
     Gives them the option to start the game or to read the rules.
@@ -50,7 +50,7 @@ def rules():
     print('6. Win the game by guessing the correct letters')
     print('7. Good Luck you will need it!')
     input('Press the enter key to return to the Homepage.\n')
-    homepage()
+    welcome()
 
 
 def start_game(word):
@@ -145,11 +145,11 @@ def restart_game():
         word = get_word()
         start_game(word)
     elif restart_option == 'N':
-        homepage()
+        welcome()
     else:
         print('Pick Y or N!')
         print(f'You picked {restart_option}')
         restart_game()
 
 
-homepage()
+welcome()
