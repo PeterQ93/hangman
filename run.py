@@ -55,13 +55,9 @@ def rules():
 
 def start_game(word):
     """
-    Starts the game and hides the word for the player.
-    It checks if the letter input is correct,
-    if not it prompts user for input, then checks if it's in the word.
-    Iterates through hidden word and substitutes letters where appropriate.
-    Checks if the game is finished and displays the relative message.
-    Displays stats like chances left, visual rep of chances left, which letters
-    have been used and the hidden word or correct letters.
+    Displays word for each turn, will run until 
+    user guesses word or runs out of tries.
+    
     """
     game_word = '_' * len(word)
     endgame = False

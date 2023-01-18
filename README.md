@@ -16,7 +16,8 @@ Hangman is a classic game played all over the world. The aim is to guess the wor
     * [***Page Layout***](#page-layout)
 1. [**Features**](#features)
     * [**Main Menu**](#main-menu)
-    * [**Instructions**](#instructions)
+    * [**Rules**](#rules)
+    * [**Difficulty**] (#difficulty)
     * [**Game Started**](#game-started)
     * [**Wrong Inputs**](#wrong-inputs)
 1. [**Testing Phase**](#testing-phase)
@@ -25,6 +26,9 @@ Hangman is a classic game played all over the world. The aim is to guess the wor
 1. [**Credits**](#credits)
    
 ## **Planning stage**
+
+<hr>
+
 ### **Target Audiences**
 
 - All ages 
@@ -55,13 +59,27 @@ Hangman is a classic game played all over the world. The aim is to guess the wor
 
 ## **Features**
 
+<hr>
 
 ### **Main Menu**
 
+![Main Menu](assets/images/welcome.png)
 
-### **Instructions**
+This Main Menu is the first thing the user sees. It gives them two options if they are unfamiliar with the game they can read the rules, Or if they know how to play they can proceed and play. I added a bit of colour to the two options so they would stand out. Above the two options displays the name of the game and the final stage of the hangman.
+
+### **Rules**
+
+![Game Rules](assets/images/rules.png)
+
+After the main menu, if the player selects the option to read the rules this is what will come up on the terminal. A numbered set of rules starting at 1 and ending at 7. If the player hits the Enter key it will then bring them back to the main menu.
+
+### **Difficulty**
 
 ### **Game Started**
+
+![Game Start](assets/images/game_start.png)
+
+Once the game starts
 
 ### **Wrong Input**
 
