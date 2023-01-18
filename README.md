@@ -17,7 +17,7 @@ Hangman is a classic game played all over the world. The aim is to guess the wor
 1. [**Features**](#features)
     * [**Main Menu**](#main-menu)
     * [**Rules**](#rules)
-    * [**Difficulty**] (#difficulty)
+    * [**Difficulty**](#difficulty)
     * [**Game Started**](#game-started)
     * [**Wrong Inputs**](#wrong-inputs)
 1. [**Testing Phase**](#testing-phase)
@@ -75,14 +75,33 @@ After the main menu, if the player selects the option to read the rules this is 
 
 ### **Difficulty**
 
+![Game Difficulty](assets/images/difficulty.png)
+
+Once you pick option 1 to play the game you get to choose the difficulty you want to pick.
+There are 3 options Easy, Medium and Hard. Easy gives you 8 chances, Medium gives you 6 chances and Hard gives you 4 chances.
+
 ### **Game Started**
 
 ![Game Start](assets/images/game_start.png)
 
-Once the game starts
+Once the game starts the position the user starts in becomes visible. The user can see which difficulty they picked and how many lives they have. They then can see how long the word they have to guess is and it will tell the user what guesses they have already picked. If the user gets a letter wrong the hanging will begin.
 
 ### **Wrong Input**
 
+![Wrong Letter](assets/images/game_wrong_let.png)
+
+![Wrong 2 Letters](assets/images/game_wrong_2.png)
+
+![Wrong Character](assets/images/game_wrong_char.png)
+
+- If the user puts in the the wrong letter it will give them a message at the top of the terminal telling them that is not the letter there looking for.
+- If the user trys to put in two letters it will provide a message at the top of the terminal explaining to only use one letter at a time.
+- If the user puts in any character other than a letter it will give them a message telling them they can only provide letters.
+
+![Letters Tried](assets/images/letters_tried.png)
+![Game Progress](assets/images/game_progress.png)
+![Game Win](assets/images/game_win.png)
+![Game Over](assets/images/game_over.png)
 ## **Testing Phase**
 
 
