@@ -24,7 +24,8 @@ def welcome():
     homepage_graphic()
     print(display_hangman(0))
     print(f'{Color.GREEN}Type 1 to begin game{Color.RESET}\n')
-    print(f'{Color.YELLOW}Type 2 to read the rules{Color.RESET}')
+    print(f'{Color.YELLOW}Type 2 to read the rules{Color.RESET}\n')
+    print(f'{Color.RED}Type 3 to exit game{Color.RESET}')
     selection = False
     while not selection:
         choice = input(' \n')
@@ -34,6 +35,9 @@ def welcome():
         elif choice == '2':
             selection = True
             rules()
+        elif choice == '3':
+            selection = True
+            exit()
         else:
             print('\n Please type 1 or 2 to make your choice.')
 
@@ -66,6 +70,7 @@ def start_game(word):
     print('Save the fellow from the gallows!\n')
     print(f'Chances left: {chances}\n')
     print('Guess this word: ' + ''.join(game_word) + '\n')
+    print(f'Amount of letters in word: {len(word)}\n')
     while not endgame and chances > 0:
         guess = input('Try a letter:\n').upper()
         if len(guess) == 1 and guess.isalpha():
@@ -95,7 +100,8 @@ def start_game(word):
             print(f'{guess} is not a letter!')
         print(display_hangman(chances))
         print(f'Chances left: {chances}\n')
-        print('Guess this word: ' + ', '.join(game_word) + '\n')
+        print('Guess this word: ' + ' '.join(game_word) + '\n')
+        print(f'Amount of letters in word: {len(word)}\n')
         print('Letters tried: ' + ', '.join(guessed_letters) + '\n')
     if endgame:
         display_win()
