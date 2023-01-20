@@ -18,15 +18,14 @@ def homepage_graphic():
     """
     Graphic to be diplayed on Homepage
     """
-    print(f"""{Color.BLUE}  
-  _    _                                         
- | |  | |                                        
- | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
- |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
- | |  | | (_| | | | | (_| | | | | | | (_| | | | |
- |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
-                      __/ |                      
-                     |___/  {Color.RESET}""")
+    print(f"""{Color.BLUE}
+██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███╗   ███╗ █████╗ ███╗   ██╗
+██║  ██║██╔══██╗████╗  ██║██╔════╝ ████╗ ████║██╔══██╗████╗  ██║
+███████║███████║██╔██╗ ██║██║  ███╗██╔████╔██║███████║██╔██╗ ██║
+██╔══██║██╔══██║██║╚██╗██║██║   ██║██║╚██╔╝██║██╔══██║██║╚██╗██║
+██║  ██║██║  ██║██║ ╚████║╚██████╔╝██║ ╚═╝ ██║██║  ██║██║ ╚████║
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+ {Color.RESET}""")
 
 
 def display_win():
@@ -54,13 +53,13 @@ def display_lose(word):
     Display a graphic for if the player loses the game.
     """
     print(f"""{Color.RED}
-                    --------
-                    |      |
-                    |      O
-                    |     \|/
-                    |      |
-                    |     / \.
-                    -
+                   --------
+                   |      |
+                   |      O
+                   |     \\|/
+                   |      |
+                   |     / \\
+                   -
     ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███
    ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒
   ▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒
@@ -98,7 +97,7 @@ def display_hangman(chances):
                    |      O
                    |     \\|/
                    |      |
-                   |     / 
+                   |     /
                    -
                 {Color.RESET}""",
                 # head, torso, and both arms
@@ -108,7 +107,7 @@ def display_hangman(chances):
                    |      O
                    |     \\|/
                    |      |
-                   |      
+                   |
                    -
                 {Color.RESET}""",
                 # head, torso, and one arm
@@ -118,7 +117,7 @@ def display_hangman(chances):
                    |      O
                    |     \\|
                    |      |
-                   |     
+                   |
                    -
                 {Color.RESET}""",
                 # head and torso
@@ -128,7 +127,7 @@ def display_hangman(chances):
                    |      O
                    |      |
                    |      |
-                   |     
+                   |
                    -
                 {Color.RESET}""",
                 # head
@@ -136,35 +135,35 @@ def display_hangman(chances):
                    --------
                    |      |
                    |      O
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
                    -
                 {Color.RESET}""",
                 # start of rope
                 f"""{Color.BLUE}
                    --------
                    |      |
-                   |      
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
+                   |
                    -
                 {Color.RESET}""",
                 # full pole
                 f"""{Color.BLUE}
-                   
-                   |      
-                   |      
-                   |    
-                   |      
-                   |     
+
+                   |
+                   |
+                   |
+                   |
+                   |
                    -
                 {Color.RESET}""",
                 # half pole
                 f"""{Color.BLUE}
-                   |      
-                   |     
+                   |
+                   |
                    -
                 {Color.RESET}"""
     ]

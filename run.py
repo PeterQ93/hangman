@@ -3,8 +3,8 @@ Hangman Game created by Peter Quigley
 """
 import random
 from words import word_list
-from classes.graphics import homepage_graphic, display_win, display_lose 
-from classes.graphics import display_hangman, Color 
+from classes.graphics import homepage_graphic, display_win, display_lose,\
+     display_hangman, Color
 
 
 def get_word():
@@ -15,7 +15,7 @@ def get_word():
     return random_word.upper()
 
 
-def welcome(): 
+def welcome():
     """
     Homepage the user is first brought to.
     Gives them the option to start the game or to read the rules.
@@ -36,7 +36,7 @@ def welcome():
             rules()
         else:
             print('\n Please type 1 or 2 to make your choice.')
- 
+
 
 def rules():
     """
@@ -55,9 +55,8 @@ def rules():
 
 def start_game(word):
     """
-    Displays word for each turn, will run until 
+    Displays word for each turn, will run until
     user guesses word or runs out of tries.
-    
     """
     game_word = '_' * len(word)
     endgame = False
