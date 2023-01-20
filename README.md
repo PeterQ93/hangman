@@ -24,6 +24,8 @@ Hangman is a classic game played all over the world. The aim is to guess the wor
     * [**Hangman Progress**](#hangman-progress)
     * [**Game Over Messages**](#game-over-messages)
 1. [**Testing Phase**](#testing-phase)
+    * [**Python Linter Testing**](#python-linter-testing)
+    * [**Manual Testing**](#manual-testing)
 1. [**Bugs**](#bugs)
 1. [**Deployment**](#deployment)
 1. [**Credits**](#credits)
@@ -34,7 +36,7 @@ Hangman is a classic game played all over the world. The aim is to guess the wor
 
 ### **Target Audiences**
 
-- All ages 
+- All ages above 10
 - All levels
 - English speakers
 - English students
@@ -42,12 +44,12 @@ Hangman is a classic game played all over the world. The aim is to guess the wor
 
 ### **User Stories** 
 
-- As a user, I would like to know how to play the game
-- As a user, I would like to know the answer at the end of the game if i get it incorrect.
+- As a user, I would like to know how to play the game.
+- As a user, I want to be able to select a difficulty which changes the amount of tries i start with.
 - As a user, I would like to know how many letters there are in the word i have to guess.
 - As a user, I would like to play the game as many times as i want.
-- As a user, I want to be able to select a difficulty which changes the amount of tries i start with.
 - As a user, I want to be able to see how many tries i have left.
+- As a user, I would like to know the answer at the end of the game if i get it incorrect.
 - As a user, when i already submit a letter i have already put in, I do not want to lose a try.
 - As a user, I want to be able to replay the game once I've finished.
 - As a user, I want to be able to see a visual representation of the hangman.
@@ -135,6 +137,33 @@ There are 3 options Easy, Medium and Hard. Easy gives you 8 chances, Medium give
 
 ## **Testing Phase**
 
+### **Python Linter Testing**
+
+![Linter Run.py File](assets/images/pep8_run.png)
+
+![Linter Graphics.py File](assets/images/pep8_graphics.png)
+
+![Linter Run.py File](assets/images/pep8_word.png)
+
+- I ran my 3 python files through Code Institutes Linter.
+- All 3 files passed the test.
+
+
+### **Manual Testing**
+
+- Implementation: At the start of the game, the user has 3 options 1. play the game 2. read the rules and 3. exit the game.
+- Test: To test this i entered each option and they all work, i also tried to enter different characters.
+- Result: Adding anything other than 1, 2 or 3 will not be accepted.
+
+<hr>
+
+- Implementation: Once you enter option 1 you are given a menu with 3 difficultys Easy, Medium or Hard. The user should only be able to enter E, M or H.
+- Test: To test this i entered each option they all worked fine. 
+- Result: You cannot enter anything other E, M or H. 
+
+<hr>
+
+- Implementation: Making 
 
 
 ## **Bugs**

@@ -69,7 +69,7 @@ def start_game(word):
     print(display_hangman(chances))
     print('Save the fellow from the gallows!\n')
     print(f'Chances left: {chances}\n')
-    print('Guess this word: ' + ''.join(game_word) + '\n')
+    print('Guess this word: ' + ' '.join(game_word) + '\n')
     print(f'Amount of letters in word: {len(word)}\n')
     while not endgame and chances > 0:
         guess = input('Try a letter:\n').upper()
